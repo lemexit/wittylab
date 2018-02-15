@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Profile Settings</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icon-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header id="header" style="background: #0A1725;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    <div class="logo">
+                        <a href="./"><img src="images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="head-search">
+                        <form action="">
+                            <input type="search" name="search" id="search" class="search-field" placeholder="Search">
+                            <button type="submit" class="search-btn"><div class="fa fa-search"></div></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="head-pro">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle user-link"  data-toggle="dropdown" href="#">
+                                <div class="user-box">
+                                    <img src="images/user.png" alt="User Name">
+                                </div>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="menu">
+        <div class="hor-menu">
+            <ul>
+                <li><a href="#"><i class="fa fa-television"></i></a></li>
+                <li><a href="#"><i class="fa fa-th-large"></i></a></li>
+                <li class="active"><a href="#"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="home mar-bot-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12 right-border">
+                    <div class="pro-upload">
+                        <img src="images/user.png" class="img-responsive" alt="Profile">
+                        <a href="#">Upload</a>
+                    </div>
+                    <div class="pro-name">
+                        <h2>Edit Profile <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a></h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="pro-list var-menu">
+                            <ul>
+                                <li><a href="#">Profile Name: <span>My Profile Name</span></a></li>
+                                <li><a href="#">Username: <span>Example123</span></a></li>
+                                <li><a href="#">Email: <span>myemail@company.com</span></a></li>
+                                <li><a href="#">Phone: <span>+8801712345678</span></a></li>
+                                <li><a href="#">Connect to Facebook</a></li>
+                                <li><a href="#">Connect to Google+</a></li>
+                                <li><a href="#">Connect to Twitter</a></li>
+                                <li><a href="#">Following Categoris</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="user-profile">
+                        <form action="">
+                            <header class="pro-header">
+                                <input type="text" class="yourshow" name="yourshow" id="yourshow" placeholder="Write something about your upcoming video.. ">
+                            </header>
+                            <div class="menu">
+                                <div class="hor-menu">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-upload"></i></a></li>
+                                        <li><a href=""><i class="fa fa-calendar"></i></a></li>
+                                        <li><a href=""><i class="fa fa-clock-o"></i></a></li>
+                                        <li><a href=""><i class="fa fa-th-large"></i></a></li>
+                                        <li><a href=""><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="yourshowBtn" type="submit">Submit</button>
+                            <div class="bod-bottom"></div>
+
+                            <div class="profile-details">
+                                <div class="pro-title">
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <h2>Time Left : Months, Days , Hours, Min , Sec</h2>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <a href="" class="btn btn-success txt-white pull-right">&bull;&bull;&bull;</a>
+                                            <a class="bell-alert" href="#"><i class="fa fa-bell"></i></a>
+                                        </div>
+										<script>$(document).ready(function()
+{counter()})</script>
+                                    </div>
+                                </div>
+                                <div class="pro-body">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="video-palyer">
+                                                <video controls="" id="videoPlayer" width="100%">
+                                                    <source src="videos/phire-to-pabona.mp4" type="video/mp4"></source>
+                                                    <source src="videos/phire-to-pabona.ogg" type="video/ogg"></source>
+                                                </video>
+                                                <img src="videos/hridoy.png" alt="Video Title" class="img-responsive" id="video">
+                                            </div>
+                                            <div class="hor-menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa fa-comments"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href=""><i class="fa fa-share-alt"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <artical>
+                                                <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the</p>
+                                            </artical>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!--Custom Script-->
+<script src="js/script.js"></script>
+</body>
+</html>

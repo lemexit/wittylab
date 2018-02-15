@@ -1,0 +1,131 @@
+	idPrimary	int(11)			No	None	AUTO_INCREMENT	Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	2	uniqueid	varchar(255)			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	3	typeIndex	varchar(7)			Yes	video		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	4	catid	int(11)			Yes	1		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	5	featured	int(11)			Yes	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	6	titleIndex	varchar(128)			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	7	url	varchar(128)			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	8	descriptionIndex	text			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	9	file	varchar(128)			Yes			Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	10	link	text			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	11	embed	text			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	12	thumb	varchar(255)			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	13	ext_thumb	text			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	14	useridIndex	mediumint(8)			Yes	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	15	date	timestamp			No	CURRENT_TIMESTAMP		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	16	nsfw	int(1)			Yes	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	17	votes	int(12)			Yes	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	18	views	bigint(100)			Yes	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	19	tagsIndex	text			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	20	approved	int(1)			Yes	1		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	21	likes	bigint(12)			Yes	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	22	dislikes	bigint(12)			Yes	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	23	comments	int(11)			Yes	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	24	source	text			Yes	NULL		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	25	subscribe	int(1)			Yes	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	26	duration	int(9)			No	0		Change Change	Drop Drop	
+Primary Primary
+Unique Unique
+Index Index
+More
+	27	social	int(1)

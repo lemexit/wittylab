@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <title>Premium Media Script 1.0 - Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+	<link rel="stylesheet" href="asset/style.css" />       
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+</head>
+<body id="main">	
+	<header>
+		<h1>Premium Media Script <span>A Premium Media Script by <a href="http://gempixel.com">KBRmedia</a></span></h1>
+	</header>
+<section>
+	<div class="side">
+		<h2>Table of Content</h2>
+		<ul>
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#guide" class="toggle">+ Quick Guide</a>
+				<ul>
+					<li><a href="#guide">Installation </a></li>
+					<li><a href="#upgrading">Upgrading</a></li>					
+				</ul>
+			</li>	
+			<li><a href="#features">Features</a></li>
+			<li><a href="#settings" class="toggle">+ Settings</a>
+				<ul>
+					<li><a href="#generals">General</a></li>
+					<li><a href="#apps">Application</a></li>
+					<li><a href="#secs">Security</a></li>
+					<li><a href="#medias">Media</a></li>
+					<li><a href="#users">User</a></li>
+					<li><a href="#adss">Advertisement</a></li>
+				</ul>
+			</li>
+			<li><a href="#themes">Themes and Editors</a></li>
+			<li><a href="#tools" class="toggle">+ Tools</a>
+				<ul>
+					<li><a href="#sitemap">Sitemap</a></li>
+					<li><a href="#digest">Digest</a></li>
+					<li><a href="#export">Export</a></li>
+					<li><a href="#optimize">Optimize</a></li>
+				</ul>
+			</li>	
+			<li><a href="#api">APIs</a></li>
+			<li><a href="#faq">Frequently Asked Questions</a></li>		
+			<li><a href="#main">Back to Top</a></li>		
+		</ul>
+	</div>
+	<div class="content">
+		<h2 id="intro">Introduction</h2>
+		<div class="inner">
+			Thank you for purchasing this awesome script! This documentation will help you get familiar with this script. Please don't forget to leave this <a href="http://gempixel.com/buy/media" target="_blank">script</a> a good rating and we would really appreciate if you can also leave <a href="http://gempixel.com/profile" target="_blank">us</a> a good rating. If this script did not meet your expectation, please before leaving a low rating, contact us and hopefully, we can fix any issues you are having.
+
+			<p class="note">An up-to-date documenation is available online 24/7 and can be access via our <a href="http://gempixel.com?utm_source=documentation&amp;utm_medium=link&amp;utm_campaign=Premium%20URL%20Shortener" target="_blank">portal</a>.</p>
+
+			<h3>Useful Links</h3>
+			<p><a href="http://gempixel.com?utm_source=documentation&amp;utm_medium=link&amp;utm_campaign=Premium%20URL%20Shortener" target="_blank">Customer Portal</a></p>
+			<p><a href="http://codecanyon.net/user/kbrmedia/follow" target="_blank">Follow us on Envato</a></p>
+			<p><a href="http://twitter.com/kbrmedia" target="_blank">Follow us on Twitter</a></p>
+			<p><a href="http://facebook.com/gempixel" target="_blank">Like our page on Facebook</a></p>
+			<p><a href="http://support.gempixel.com" target="_blank">Dedicated Support Portal</a></p>
+
+			<h3 id="license">License <a href="http://codecanyon.net/licenses" target="_blank"><small>(learn more)</small></a></h3>
+			Two types of license are available: Regular or Extended. If you are using this script for multiple websites, you must <b>buy a license for each of them.</b>
+			<p class="notice">Items purchased under a Regular or Extended License <strong>may NOT</strong> be redistributed or resold "<strong>as-is</strong>" or as part of any other collection of image resources or files. You do not own the software but simply own a license to operate it therefore the author of this item has full rights on this item.</p>
+
+			<h4>Regular License Examples (from <a href="http://codecanyon.net/licenses" target="_blank">Envato</a>)</h4>
+			<p>The Regular License could be used for the following:</p>
+			<ul>
+				<li>Single website (commercial, personal, or non-profit).</li>
+				<li>Single website for a client (commercial, personal, or non-profit).</li>
+				<li>Single intranet site project.</li>
+			</ul>
+
+			<h4>Extended License Examples  (from <a href="http://codecanyon.net/licenses" target="_blank">Envato</a>)</h4>
+			<p>The Extended License could be used for any of the following:</p>
+			<ul>
+				<li>An online service where the file can be displayed on multiple users' pages.</li>
+				<li>Part of a software package for sale.</li>
+			</ul>
+			
+			<h3 id="support">Support</h3>
+			If you stumble upon an issue or if you need help you may contact via my <a href="http://codecanyon.net/user/KBRmedia">codecanyon profile</a> and I would be happy to help you.
+		</div>
+	</div>	
+	<div class="content">
+		<h2 id="guide">Quick Guide</h2>
+		<div class="inner">
+			<p>The installation of this script is very trivial. Simply follow the instructions below and you will be ready to launch your new media site in about 5 minutes from now.</p>
+			<ol>
+				<li>Upload and extract the compressed file <strong>main.zip</strong> to the root of your server.</li>
+				<li>Make sure that the folder content and all of its sub-folders are writable (Permission 755)</li>
+				<li>Point your browser to your site and you should be redirected to the installer. If not point your browser to http://yoursite.com/install.php</li>
+				<li>Once on the installer, read and follow instructions as the installer will guide through the installation of this script.
+					<ul>
+						<li>On the <strong>Database Configuration</strong> page, the field <strong>Database Prefix</strong> is optional. Fill this only if you have multiple tables in the same database</li>
+						<li>The field <strong>Server Timezone</strong> is the timezone of your server! This is used to provide accurate consistent time server-wide. If you don't know your server's timezone, you can pick anything then change it later via the file includes/Config.php</li>
+						<li>The <strong>Security Key</strong> is a random string that is used to encode data with. This should not be changed after the installation.</li>
+						<li><strong>Note</strong> If you get blank page in step 3 then the script was not able to open the file includes/Config.sample.php or it wasn't able to rename it to includes/Config.php. You will need to do this manually!</li>
+					</ul>
+				</li>				
+			</ol>
+			<h3 id="upgrading">Upgrading (<a href="upgrade.html">click here for more info</a>)</h3>
+			<p>All upgrading instructions are detailed in "upgrade.html" located in the same folder as this file. Simply open that and follow the instructions according to the version of the script. Please note that some update may require you to replace all files while others only a couple of files. In both cases it is strongly recommended that you first backup all your existing files and download it to your computer.</p>
+			<a href="upgrade.html"><b>Click here for detailed upgrade instructions.</b></a>			
+		</div>
+	</div>
+	<div class="content">
+		<h2 id="features">Features</h2>
+		<div class="inner">
+			<p>Here is a glimpse of some of the most awesome features this script has to offer.</p>
+			<h3>Import. Import. Import.</h3>
+			<p>
+				Import what ever you want and however you want. A lot of effort has went into the import system so you can import anything from some majors sites like Youtube, Vine, Vimeo, Dailymotion, etc. Here is how you can import media.
+			</p>
+			<ol>
+				<li>Import using the URL to the video</li>
+				<li>Import using the Bookmarklet that is found in the admin panel > Import a Single Video</li>
+				<li>Mass Import from Youtube using the live admin interface</li>
+			</ol>
+
+			<h3>Add Custom Media</h3>
+			<p>
+				You would rather upload a custom media? No problem. Use the interface to upload video and image files of the following format: mp4, jpg, png and gif. Please note that this script doesn't convert videos nor does it generate thumbnails from videos!
+			</p>
+
+			<h3>Featured and NSFW</h3>
+			<p>
+				You can tag a media file as featured and/or NSFW to make them stand from other media. Featuring a video will prioritize that video while tagging it as NSFW will prevent users who have NSFW option disabled to view them. Regarding NSFW, you will have to make sure that you add the minimum age required to register in your TOS because if a user registers they will have access to NSFW content.
+			</p>
+
+			<h3>Report</h3>
+			<p>
+				Registered users can report any content. Whether it is a media file, user or comment, it can be reported. You will be able to moderate reports via the admin panel.
+			</p>
+
+			<h3>Categories and Types</h3>
+			<p>
+				One of the most important feature of this script is the ability to assign a type. Assigning a type to media makes a big difference so you have to make sure to properly assign it. For example don't assign a picture the video category or vice versa. The built-in types are <strong>video, music, vine and picture</strong>. This gives you the ability to run a one-script-multimedia-site with ease. You also have to properly assign a type of the categories.
+			</p>
+
+			<h3>User Profile and Subscription</h3>
+			<p>
+				User can subscribe to each other and receive notification when there is a new media.
+			</p>
+		</div>
+	</div>
+	<div class="content">
+		<h2 id="settings">Script Configuration</h2>
+		<div class="inner">
+			<p>Once you have successfully installed the script, you will be able to fully customize it before importing/adding media. Login as admin then you will see your own admin bar at the very top of the script. This admin is dynamic meaning that the content will change depending on which page you are. Look at the right side to find Configuration and click that to configure the script.</p>	
+
+			<h3 id="generals">General Settings</h3>		
+			<p>Under this tab you will find all of the important settings you will need for your site. Fill these as you wish. Notice the email field is used for many things. It first of all used as the sender when the script sends an email. So you will want to make sure you provide a good email. Also filling the social links will activate sidebar widgets. Please make sure that the link you provide is working and is of the proper format.</p>
+
+			<h3 id="apps">Application Settings</h3>
+			<p>This tab groups the main settings you will need to customize your site. Their function is very easy to understand so there is not much to say more. Notice the "Blacklist Words" field as this is used to filter bad words and replace them by an asterisk *. You will need to separate words with a comma. Example badword1,badword2,badword3</p>
+
+			<h3 id="secs">Security Settings</h3>
+			<p>You can enabled catpha to prevent bots from creating accounts or submitting forms. To do so you have options: reCaptcha or Solvemedia. reCaptcha is a very popular captcha system provided by Google. It is free and you can use you Google account to create keys. Solvemedia is another alternative however this system allows you to monetize on captchas. Once you create your account they will give three keys. You will need to add those keys in the file includes/library/Solvemedia.php.</p>
+
+			<h3 id="medias">Media Settings</h3>
+			<p>These settings allows you to change how media looks and upload settings. The display mode setting will switch the script from being a more Youtube-style to a 9gag-style.</p>
+
+			<h4>Local Thumbnails</h4>
+			<p>This a very important setting so you will want to clear your mind on whether you want to store them locally or link to them. You must <strong>not</strong> change this after your have upload/imorted your first media! All thumbnail are stored in the /content/thumbs folder.</p>
+			
+			<h4>Maximum Upload Size</h4>
+			<p>This is another important setting. The maximum upload size is determined by your server configuration. Look under this field to determine what is your maximum upload limit. Note that if you set a size higher than this, the script will set the lower limit as the size limit. Example if you set 100MB and your server's limit is 10 MB then the script will set it as 10 MB.</p>
+
+		</div>
+	</div>
+	<div class="content">
+		<h2 id="users">User Configuration</h2>
+		<div class="inner">
+			<h3 id="facebook"><b>Facebook Connect</b> </h3>
+
+			<p>You will notice that Facebook connected has now been integrated to this application. Users can now login with their Facebook and bookmark their favorite sites. To set up your app, first go to <a href="https://developers.facebook.com">https://developers.facebook.com</a> and set up a new app by clicking "Apps". Then click "Create New App"; Facebook will ask you to configure your app. The most important fields you must fill out are <b>App Domains</b> and <b>Site URL</b>. Following that Facebook will generate two keys for you. Go to admin settings and paste those keys. That's it. If you did everything correctly Facebook connect should work.</p>
+
+			<h3 id="twitter"><b>Twitter Connect</b></h3>
+
+			In this version, twitter connect has been added. Now users can login using twitter the same way they use Facebook. You must enable twitter connect for it to appear and function. You can do that on the admin panel. You must register your website on Twitter.com. 
+			<h4>Instructions</h4>
+			<ol>
+				<li>Go to <a href="https://dev.twitter.com/apps" target="_blank">https://dev.twitter.com/apps</a> and Login.</li>
+				<li>Then click "Create a new application" on top right</li>
+				<li>Fill the required fields (with a start next to it), add this to the callback field: http://YOUSITE.com/, accept the terms and conditions and click "Create your Twitter application".</li>
+				<li>You will then be redirected to a page with your OAuth Settings</li>
+				<li>Search &amp; Find two keys: <b>Consumer Key and Consumer Secret</b> Copy these keys and paste them in <b>admin settings</b> </li>
+				<li>Finally, under "settings" of your application on twitter you will see "Allow this application to be used to Sign in with Twitter". Check that and click "Update this twitter application's settings".</li>
+			</ol>	
+			<p>If you did everything correctly, Twitter OAuth should work. If it doesn't, send me an email and I will help you.</p>
+
+			<h3 id="google"><b>Google Connect</b> </h3>
+			<p>
+				Google connect protocol has been changed due to restrictions from Google. For this reason you will need to set up Google connect again. Simply follow the instructions below and it should be fairly simple.
+			</p>
+			<ol>
+				<li>Go <a href="https://code.google.com/apis/console">https://code.google.com/apis/console</a> and login using your Google Account</li>
+				<li>On the left side click "Credentials"</li>
+				<li>Then click "Create new Client ID" to open the popup</li>
+				<li>Select "Web Application"</li>
+				<li>Add your domain name as "http://yourdomainname.com" under Authorized Javascript Origins</li>
+				<li>Add the URI to Google Connect under Authorized Redirect URI as "http://yourdomainname.com/user/login/google"</li>
+				<li>Also make sure to create your <strong>Consent Screen</strong></li>
+			</ol>		
+		</div>		
+	</div>
+	<div class="content">
+		<h2 id="adss">Advertisement Configuration</h2>
+		<div class="inner">
+			<p>
+				This script allows you to add any advertisement code you wish and it will display it wherever it fits. You can also enable or disable ads with a single click. The three main sizes are 728x90, 468x60 and 300x250. However there are also two other slots. One that is reserved for video pre-roll and the other one should be a responsive ad because it will be shown on mobile platforms. Notice if you empty the preroll ad then it will not show up otherwise it will show before the viewer is able to click play. You can also change the time the viewer has to wait before being able to play a video.
+			</p>		
+
+			<p>
+				You can easily display any of the ads anywhere you want to by using the following php code: <pre>&lt;?php echo $this->ads('<strong><em>SIZE</em></strong>'); ?&gt;</pre> where <strong>SIZE</strong> can be any of the following: 728, 468, 300, rep		
+			</p>	
+		</div>		
+	</div>
+	<div class="content">
+		<h2 id="themes">Themes and Editors</h2>
+		<div class="inner">
+			<p>
+				This script comes with a powerful yet easy theming system that allows you to easily modify the theme or create your own. It also comes with a powerful theme editor and translation generator.
+			</p>
+			<h3>Themes</h3>
+			<p>
+				You can easily activate any themes in the admin panel by just clicking the activate button. If you want to build your own theme but don't want to touch the default theme, just clone it and activate it.
+			</p>
+			<h3>Theme Editor</h3>
+			<p>
+				You can use the the theme editor to directly edit any of the theme files very easily. You also get a powerful code editor built-in so you can safely code your way to success. As a side note, you should not be editing the PHP in the theme. The PHP code is formatted in a black color so you can easily identify it.
+			</p>
+			<h3>Translation Generator</h3>
+			<p>
+				You can easily translate the site to any languages you want by using the built-in language editor. Simply open the generator and translate each strings. Make sure to save periodically in order to prevent loss of data.
+			</p>
+			<h3>Plugins and Functions (Beta)</h3>
+			<p>
+				This script includes a powerful plugin API so you can extend the script without having to touch any of the core files. This feature is currently in beta and the API documentation will be available after the script has been released.
+			</p>
+		</div>
+	</div>
+	<div class="content">
+		<h2 id="tools">Tools</h2>
+		<div class="inner">
+			<p>The script comes with a couple of tools to allow you to maintain your site.</p>
+			<h3 id="sitemap">Sitemap</h3>
+			<p>
+				Sitemaps are an important strategy for you to get indexed quickly. Use this tool to generate an XML sitemap and then submit it search engines. Notice that the script will automatically ping Google and Bing to index the main sitemap once you generate it.
+			</p>
+			<h3 id="digest">Digests/Newsletters</h3>
+			<p>
+				This script allows to you send automatic digests and newsletters to your users by using this tool. Digests are a summary of new media on your site. Note that if you abuse this tool you will be in trouble with either your host or spam databases! So it is recommended to not use this too often.
+			</p>
+			<h3 id="export">Export Data</h3>
+			<p>
+				If for some reason you want to export your users' list, you can use this tool. This allows you to define what you want to export. Simply follow the instructions.
+			</p>
+			<h3 id="optimize">Optimize Database</h3>
+			<p>
+				Optimizing database should be a thing you do regularly as it is inevitable for data to get lost. This tool will optimize the database and <strong>remove old notifications.</strong>.
+			</p>
+		</div>
+	</div>
+	<div class="content">
+		<h2 id="api">APIs</h2>
+		<div class="inner">
+			<p>The script now comes with custom API system that enables only the admin to develop app. First you need to enable the API system via the admin panel under "Social &amp; API Settings". Then you will be able to define a custom API key which you can use to grab media. For all requests, you need to send the key parameter which includes your API key.</p>
+			<h3>Media EndPoint</h3>
+			<p>This endpoint allows you to retrieve information regarding a particular media. The endpoint is</p>
+			<p><code>GET /api/view/UNIQUEID</code></p>
+			<p>Example: http://yoursite.com/api/view/abcd5?key=YOURAPIKEY</p>
+			<p>Results Example</p>
+<pre>
+{
+   "status":"ok",
+   "data":{
+      "id":"jezQH",
+      "url":"http:\/\/mysite.com/view\/don-omar-taboo\/jezQH",
+      "title":"Don Omar - Taboo",
+      "description":"Download now on:\niTunes: http:\/\/bit.ly\/1emlRdS \nAmazon:  http:\/\/amzn.to\/17xXn96\n\nVisit http:\/\/universalmusica.com\/donomar for more music and news from Don Omar.",
+      "duration":"293",
+      "votes":"1",
+      "views":"11",
+      "likes":"1",
+      "comments":"2",
+      "embed":"&#x3C;iframe src=&#x27;http:\/\/mysite.com\/embed\/jezQH&#x27; frameborder=&#x27;0&#x27; width=&#x27;550&#x27; height=&#x27;350&#x27; scrolling=&#x27;no&#x27; allowfullscreen&#x3E;&#x3C;\/iframe&#x3E;&#x3C;p&#x3E;&#x3C;a style=&#x27;color: #000; text-decoration: none;&#x27; href=&#x27;http:\/\/mysite.com\/view\/don-omar-taboo\/jezQH&#x27; title=&#x27;Don Omar - Taboo&#x27;&#x3E;Don Omar - Taboo&#x3C;\/a&#x3E;&#x3C;\/p&#x3E;",
+      "author":{
+         "name":"Admin",
+         "link":"http:\/\/mysite.com\/user\/admin"
+      }
+   }
+}
+</pre>			
+			<h3>Search EndPoint</h3>
+			<p>This endpoint allows you to search media. The endpoint is</p>
+			<p><code>GET /api/search/KEYWORD</code></p>
+			<p>Example: http://yoursite.com/api/search/KEYWORD?key=YOURAPIKEY&limit=RESULTSPERPAGE&order=[views or date or votes]&page=CURRENTPAGE</p>
+			<p>Results Example</p>
+<pre>
+{
+   &#x22;status&#x22;:&#x22;ok&#x22;,
+   &#x22;results&#x22;:10,
+   &#x22;prev&#x22;:4,
+   &#x22;next&#x22;:null,
+   &#x22;data&#x22;:[
+      {
+         &#x22;id&#x22;:&#x22;8UDm4&#x22;,
+         &#x22;url&#x22;:&#x22;http:\/\/localhost\/ems\/1.5\/view\/mcdonalds-excorcism-prank-ownage-pranks\/8UDm4&#x22;,
+         &#x22;title&#x22;:&#x22;McDonalds Excorcism Prank - Ownage Pranks&#x22;,
+         &#x22;description&#x22;:&#x22;This is a second call I did to a McDonalds manager who used to be a crack head. The last time I spoke to him he said he could remove the devil from my soul.. so this time I called back and took him up on his offer.. lmao\n\n\nBecome my facebook fan! I pre-release my videos on facebook, so you&#x26;apos;ll see them before they appear on my YouTube profile (The facebook version is uncensored)  http:\/\/www.facebook.com\/OwnagePranks\n\nRegister and join the community @ http:\/\/www.ownagepranks.com\n\nFollow me on twitter! http:\/\/twitter.com\/OwnagePranks\n\nIf you do all this you&#x26;apos;ll definitely catch my next live show!\n\nComment and subscribe!&#x22;,
+         &#x22;duration&#x22;:&#x22;325&#x22;,
+         &#x22;votes&#x22;:&#x22;0&#x22;,
+         &#x22;views&#x22;:&#x22;0&#x22;,
+         &#x22;likes&#x22;:&#x22;0&#x22;,
+         &#x22;comments&#x22;:&#x22;0&#x22;,
+         &#x22;embed&#x22;:&#x22;&#x3C;iframe src=&#x27;http:\/\/localhost\/ems\/1.5\/embed\/8UDm4&#x27; frameborder=&#x27;0&#x27; width=&#x27;100%&#x27; height=&#x27;450&#x27; scrolling=&#x27;no&#x27; allowfullscreen&#x3E;&#x3C;\/iframe&#x3E;&#x22;
+      },
+      {
+         &#x22;id&#x22;:&#x22;PwRoR&#x22;,
+         &#x22;url&#x22;:&#x22;http:\/\/localhost\/ems\/1.5\/view\/insane-cheating-girlfriend-prank-animated-ownage-pranks\/PwRoR&#x22;,
+         &#x22;title&#x22;:&#x22;Insane Cheating Girlfriend Prank (animated) - Ownage Pranks&#x22;,
+         &#x22;description&#x22;:&#x22;I called a black guy as Tyrone and pretended like I&#x26;apos;ve been cheating with his long-term girlfriend. His reaction is amazing. Help support these animations by sharing the video with a friend! :) Subscribe for free to catch my future videos - http:\/\/own.ag\/youtube\n\nSecond Channel Reveal (Part 2) - http:\/\/own.ag\/eN\n\nIndian Windows Scammer Prank - http:\/\/own.ag\/cJ\nRidiculous Home Buying Prank - http:\/\/own.ag\/dD\n\nFacebook--------------------- http:\/\/facebook.com\/OwnagePranks\nTwitter ------------------------ http:\/\/twitter.com\/OwnagePranks\n2nd channel \/ Extras ---- http:\/\/youtube.com\/MrOwnagePranks\nMerchandise ---------------- http:\/\/ownagepranks.spreadshirt.com\n\nAnimated by Sam T - http:\/\/youtube.com\/EbolaWorld&#x22;,
+         &#x22;duration&#x22;:&#x22;264&#x22;,
+         &#x22;votes&#x22;:&#x22;0&#x22;,
+         &#x22;views&#x22;:&#x22;0&#x22;,
+         &#x22;likes&#x22;:&#x22;0&#x22;,
+         &#x22;comments&#x22;:&#x22;0&#x22;,
+         &#x22;embed&#x22;:&#x22;&#x3C;iframe src=&#x27;http:\/\/localhost\/ems\/1.5\/embed\/PwRoR&#x27; frameborder=&#x27;0&#x27; width=&#x27;100%&#x27; height=&#x27;450&#x27; scrolling=&#x27;no&#x27; allowfullscreen&#x3E;&#x3C;\/iframe&#x3E;&#x22;
+      }
+   ]
+}	
+</pre>	
+			<h3>User EndPoint</h3>
+			<p>This endpoint allows you to get a user's media. The endpoint is</p>
+			<p><code>GET /api/user/USERNAME</code></p>
+			<p>Example: http://yoursite.com/api/user/USERNAME?key=YOURAPIKEY&limit=RESULTSPERPAGE&order=[views or date or votes]&page=CURRENTPAGE</p>
+			<p>Results Example</p>
+<pre>
+{
+   &#x22;status&#x22;:&#x22;ok&#x22;,
+   &#x22;results&#x22;:142,
+   &#x22;prev&#x22;:0,
+   &#x22;next&#x22;:2,
+   &#x22;author&#x22;:{
+      &#x22;name&#x22;:&#x22;&#x22;,
+      &#x22;description&#x22;:&#x22;We have the best videos every! Sit back and enjoy our videos!&#x22;,
+      &#x22;cover&#x22;:&#x22;http:\/\/localhost\/ems\/1.5\/static\/covers\/cover-1.jpg&#x22;,
+      &#x22;avatar&#x22;:&#x22;http:\/\/localhost\/ems\/1.5\/content\/users\/JOjSxejI_avatar.jpg&#x22;
+   },
+   &#x22;data&#x22;:[
+      {
+         &#x22;id&#x22;:&#x22;jezQH&#x22;,
+         &#x22;url&#x22;:&#x22;http:\/\/localhost\/ems\/1.5\/view\/don-omar-taboo\/jezQH&#x22;,
+         &#x22;title&#x22;:&#x22;Don Omar - Taboo&#x22;,
+         &#x22;description&#x22;:&#x22;Download now on:\niTunes: http:\/\/bit.ly\/1emlRdS \nAmazon:  http:\/\/amzn.to\/17xXn96\n\nVisit http:\/\/universalmusica.com\/donomar for more music and news from Don Omar.&#x22;,
+         &#x22;duration&#x22;:&#x22;293&#x22;,
+         &#x22;votes&#x22;:&#x22;1&#x22;,
+         &#x22;views&#x22;:&#x22;11&#x22;,
+         &#x22;likes&#x22;:&#x22;1&#x22;,
+         &#x22;comments&#x22;:&#x22;2&#x22;,
+         &#x22;embed&#x22;:&#x22;&#x3C;iframe src=&#x27;http:\/\/localhost\/ems\/1.5\/embed\/jezQH&#x27; frameborder=&#x27;0&#x27; width=&#x27;100%&#x27; height=&#x27;450&#x27; scrolling=&#x27;no&#x27; allowfullscreen&#x3E;&#x3C;\/iframe&#x3E;&#x22;
+      }      
+   ]
+}
+</pre>		
+			<h3>Youtube and Vimeo API Key</h3>	
+	        <h3>Google API Key</h3>
+	        <ol>
+	          <li>Login with your Google Account at <a href="https://console.developers.google.com">https://console.developers.google.com</a></li>
+	          <li>Fill the credetials page</li>
+	          <li>Follow images below</li>
+	          <li>Then paste your API code in the admin panel.</li>
+	        </ol>
+
+	        <img src="asset/Instructions 1.png" alt="" style="width: 100%">
+	        <img src="asset/Instructions 2.png" alt=""  style="width: 100%">
+	        <img src="asset/Instructions 3.png" alt=""  style="width: 100%">
+	        <img src="asset/Instructions 4.png" alt=""  style="width: 100%">
+					
+					<h3>Vimeo API Key</h3>
+	        <ol>
+	          <li>Login with your Vimeo Account at <a href="https://developer.vimeo.com">https://developer.vimeo.com</a></li>
+	          <li>Follow images below</li>
+						<li>Then paste your API code in the admin panel.</li>
+	        </ol>
+
+	        <img src="asset/V1.jpeg" alt="" style="width: 100%">
+	        <img src="asset/V2.jpeg" alt=""  style="width: 100%">
+	        <img src="asset/V3.jpeg" alt=""  style="width: 100%">	        
+	        <img src="asset/V4.jpeg" alt=""  style="width: 100%">	        
+		</div>
+	</div>	
+	<div class="content">
+		<h2 id="faq">Frequently Asked Questions</h2>
+		<div class="inner">
+			<h3>The installer is stuck at step 3 and I am seeing a blank page.</h3>
+			<p>Although this can be caused by many reasons, a common cause is that the script was not able to open and write in the file includes/Config.sample.php. Open this file and check if your DB info has been saved. If not manually replace the placeholders (like RHOST,RUSER) by the actual info. Another reason you may see a blank page at step 3 is that the script wasn't able to rename the file includes/Config.sample.php to includes/Config.php. You will need to do this manually.</p>
+
+			<h3>The time is showing as a negative or huge value.</h3>
+			<p>
+				If the time is shown correctly then that means your server's timezone was not set correctly. You will need set the correct timezone to fix this. To set the timezone, open the file includes/Config.php and add your timezone on right side of arrow. You can get your timezone from <a href="https://php.net/manual/en/timezones.php">https://php.net/manual/en/timezones.php</a>.
+			</p>
+
+			<h3>I keep getting a 404 page whenever I click on something.</h3>
+			<p>
+				If you get a 404 page (the one generated by your server) then that means you did not upload the file .htaccess or your server doesn't support the mod rewrite module. If you did not upload the file .htaccess then you will need to upload to the root of your server. If for some reason you cannot see that file in the package, you will need to create that file using cpanel's editor (or equivalent) to create a new file named <strong>.htaccess</strong> and put the following code in it.
+<pre>
+AddType video/mp4 .mp4
+RewriteEngine On
+Rewritebase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^admin/(.*)?$ admin/index.php?a=$1 [QSA,NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)?$ index.php?a=$1	[QSA,NC,L]
+ErrorDocument 404 /index.php?a=404
+</pre>				
+			</p>
+		</div>
+	</div>	
+</section>
+<footer>
+	2014 &copy; <a href="http://codecanyon.net/user/KBRmedia">KBRmedia</a> - All Rights Reserved	
+</footer>
+	<script src="asset/jquery.min.js"></script>	
+	<script type="text/javascript" src="asset/global.js"></script>
+</body>
+</html>	

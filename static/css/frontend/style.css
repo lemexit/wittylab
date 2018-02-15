@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+html, body { height: 100%; margin: 0px;}
+body{
+    text-align:center;
+    font-family:Hind,Arial,sans-serif;
+    color:#333;
+    font-size:14px;
+}
+/*===========@Global Styles ============*/
+*{margin:0; padding:0; outline:none}
+*html, body {
+    height:100%;
+}
+.wrapper {
+    min-height:100%; /* gives layout 100% height */
+    width:100%;
+    margin:0 auto;/* centers #wrapper */
+    position: relative;
+}
+* html .wrapper {
+    height:100%; /* IE6 treats height as min-height */
+}
+img,fieldset{border:0}
+h1,h2,h3,h4,h5,h6,ul{padding: 0; margin: 0;}
+a{color:#808080 !important; -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;}
+a{text-decoration:none !important;}
+
+.clear{ clear:both;}
+a:hover{text-decoration:none !important;}
+a:focus{outline:none !important;}
+
+.trans-in-out, .trans-in-out:hover{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/*=======Font Color Class=======*/
+.txt-white{color: #ffffff !important;}
+.txt-amber{color: #FFC107 !important}
+.txt-lBlack{color: #333 !important;}
+.txt-black{color: #000000 !important}
+/*==========Background Color==========*/
+.bg-white{background: #ffffff !important;}
+.bg-amber{background: #FFC107 !important;}
+.bg-lime{background: #C6FF00 !important;}
+.bg-green{background: #4CAF50 !important;}
+.bg-lGreen{background: #64DD17 !important;}
+.bg-orange{background: #FF9800 !important;}
+.bg-lOrange{background: #FF9800 !important;}
+.bg-Dorange{background: #E65100 !important;}
+.bg-yello{background: #FFFF00 !important;}
+
+
+.bg-red{background: #F44336 !important}
+.bg-lred{background: #E57373 !important}
+.bg-Dred{background: #B71C1C !important}
+.bg-pink{background: #E91E63 !important}
+.bg-lpink{background: #F06292 !important}
+.bg-Dpink{background: #880E4F !important}
+.bg-purple{background: #9C27B0 !important}
+.bg-lpurple{background: #BA68C8 !important}
+.bg-Dpurple{background: #4A148C !important}
+.bg-deepPurple{background: #673AB7 !important}
+.bg-ldeepPurple{background: #9575CD !important}
+.bg-DdeepPurple{background: #311B92 !important}
+.bg-indigo{background: #3F51B5 !important}
+.bg-lindigo{background: #7986CB !important}
+.bg-Dindigo{background: #1A237E !important}
+
+.bg-blue{background: #2196F3 !important}
+.bg-lblue{background: #64B5F6 !important}
+.bg-Dblue{background: #0D47A1 !important}
+
+.bg-lightBlue{background: #03A9F4 !important}
+.bg-llightBlue{background: #4FC3F7 !important}
+.bg-DlightBlue{background: #01579B !important}
+
+.bg-blue1{background: #BBDEFB !important}
+.bg-blue2{background: #90CAF9 !important}
+.bg-blue3{background: #64B5F6 !important}
+.bg-blue4{background: #42A5F5 !important}
+
+.bg-cyan{background: #00BCD4 !important}
+.bg-lcyan{background: #4DD0E1 !important}
+.bg-Dcyan{background: #006064 !important}
+.bg-teal{background: #009688 !important}
+.bg-lteal{background: #4DB6AC !important}
+.bg-Dteal{background: #004D40 !important}
+.bg-green{background: #4CAF50 !important}
+.bg-lgreen{background: #81C784 !important}
+.bg-Dgreen{background: #1B5E20 !important}
+.bg-lightGreen{background: #8BC34A !important}
+.bg-llightGreen{background: #AED581 !important}
+.bg-DlightGreen{background: #33691E !important}
+.bg-lime{background: #CDDC39 !important}
+.bg-llime{background: #DCE775 !important}
+.bg-Dlime{background: #827717 !important}
+.bg-yellow{background: #FFEB3B !important}
+.bg-lyellow{background: #FFF176 !important}
+.bg-Dyellow{background: #F57F17 !important}
+.bg-amber{background: #FFC107 !important}
+.bg-lamber{background: #FFD54F !important}
+.bg-Damber{background: #FF6F00 !important}
+.bg-orange{background: #FF9800 !important}
+.bg-lorange{background: #FFB74D !important}
+.bg-Dorange{background: #E65100 !important}
+.bg-deepOrange{background: #FF5722 !important}
+.bg-ldeepOrange{background: #FF8A65 !important}
+.bg-DdeepOrange{background: #BF360C !important}
+.bg-brown{background: #795548 !important}
+.bg-lbrown{background: #A1887F !important}
+.bg-Dbrown{background: #3E2723 !important}
+.bg-grey{background: #9E9E9E !important}
+.bg-lgrey{background: #E0E0E0 !important}
+.bg-Dgrey{background: #212121 !important}
+.bg-blueGrey{background: #607D8B !important}
+.bg-lblueGrey{background: #90A4AE !important}
+.bg-DblueGrey{background: #263238 !important}
+.bg-black{background: #000000 !important}
+.bg-white{background: #ffffff !important}
+
+
+/*=======Font Color Class=======*/
+.text-red{color: #F44336 !important}
+.text-lred{color: #E57373 !important}
+.text-Dred{color: #B71C1C !important}
+.text-pink{color: #E91E63 !important}
+.text-lpink{color: #F06292 !important}
+.text-Dpink{color: #880E4F !important}
+.text-purple{color: #9C27B0 !important}
+.text-lpurple{color: #BA68C8 !important}
+.text-Dpurple{color: #4A148C !important}
+.text-deepPurple{color: #673AB7 !important}
+.text-ldeepPurple{color: #9575CD !important}
+.text-DdeepPurple{color: #311B92 !important}
+.text-indigo{color: #3F51B5 !important}
+.text-lindigo{color: #7986CB !important}
+.text-Dindigo{color: #1A237E !important}
+.text-blue{color: #2196F3 !important}
+.text-lblue{color: #64B5F6 !important}
+.text-Dblue{color: #0D47A1 !important}
+.text-lightBlue{color: #03A9F4 !important}
+.text-llightBlue{color: #4FC3F7 !important}
+.text-DlightBlue{color: #01579B !important}
+.text-cyan{color: #00BCD4 !important}
+.text-lcyan{color: #4DD0E1 !important}
+.text-Dcyan{color: #006064 !important}
+.text-teal{color: #009688 !important}
+.text-lteal{color: #4DB6AC !important}
+.text-Dteal{color: #004D40 !important}
+.text-green{color: #4CAF50 !important}
+.text-lgreen{color: #81C784 !important}
+.text-Dgreen{color: #1B5E20 !important}
+.text-lightGreen{color: #8BC34A !important}
+.text-llightGreen{color: #AED581 !important}
+.text-DlightGreen{color: #33691E !important}
+.text-lime{color: #CDDC39 !important}
+.text-llime{color: #DCE775 !important}
+.text-Dlime{color: #827717 !important}
+.text-yellow{color: #FFEB3B !important}
+.text-lyellow{color: #FFF176 !important}
+.text-Dyellow{color: #F57F17 !important}
+.text-amber{color: #FFC107 !important}
+.text-lamber{color: #FFD54F !important}
+.text-Damber{color: #FF6F00 !important}
+.text-orange{color: #FF9800 !important}
+.text-lorange{color: #FFB74D !important}
+.text-Dorange{color: #E65100 !important}
+.text-deepOrange{color: #FF5722 !important}
+.text-ldeepOrange{color: #FF8A65 !important}
+.text-DdeepOrange{color: #BF360C !important}
+.text-brown{color: #795548 !important}
+.text-lbrown{color: #A1887F !important}
+.text-Dbrown{color: #3E2723 !important}
+.text-grey{color: #9E9E9E !important}
+.text-lgrey{color: #E0E0E0 !important}
+.text-Dgrey{color: #212121 !important}
+.text-blueGrey{color: #607D8B !important}
+.text-lblueGrey{color: #90A4AE !important}
+.text-DblueGrey{color: #263238 !important}
+.text-black{color: #000000 !important}
+.text-white{color: #ffffff !important}
+
+.txt-up{text-transform: uppercase;}
+.mar-bot-30{margin-bottom: 30px;}
+.hor-menu, .var-menu{width: 100%; float: left; position: relative;}
+.hor-menu ul, .var-menu ul{float: left;}
+.var-menu ul, .var-menu ul li, .var-menu ul li a{width: 100%;}
+.hor-menu ul li, .var-menu ul li{float: left; list-style: none; display: block;}
+.hor-menu ul li a, .var-menu ul li a{text-align: center; padding: 5px 10px; color: #ffffff !important; font-size: 16px; text-transform: capitalize;}
+
+.border-line{width: 50%; height: 10px; margin: 0 auto; overflow: hidden; border-bottom: 2px solid #ffffff; padding-top: 15px;}
+/*===========@Global Styles ============*/
+.title-sec{width: 100%; float: left;}
+.title-sec p{font-size: 18px; text-align: center; margin: 0;}
+
+#header{width: 100%; float: left; padding: 15px 0;}
+.logo, .logo a{width: 100%; float: left;}
+.logo a img{float: left; height: 80px;}
+
+.top-button.hor-menu ul{float: right; margin-top: 20px;}
+.top-button.hor-menu ul li{margin-right: 15px;}
+.top-button.hor-menu ul li a{border: 1px solid #ffffff; background: #4DB74C;}
+
+.login-sec{position: absolute; top:50%; margin-top: -175px;  left: 0; width: 100%;}
+.login-box{width: 100%; max-width: 600px; border: 1px solid #0A1725; background: rgba(255, 255, 255, 0.8); padding: 50px 15px; overflow: hidden; margin: 0 auto; box-shadow: 0px 0px 8px #000;}
+.login-box #username, .login-box #password, .search-field{width: 100%; float: left; padding: 10px 15px; margin-bottom: 15px; border: 1px solid #1B5E20; font-size: 16px;}
+.login-box ::-webkit-input-placeholder, .head-search ::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+    color: #1B5E20;
+    opacity: .6;
+    text-transform: capitalize;
+}
+.login-box ::-moz-placeholder, .head-search ::-moz-placeholder{ /* Firefox 19+ */
+    color: #1B5E20;
+    opacity: .6;
+    text-transform: capitalize;
+}
+.login-box :-ms-input-placeholder, .head-search :-ms-input-placeholder { /* IE 10+ */
+    color: #1B5E20;
+    opacity: .6;
+    text-transform: capitalize;
+}
+.login-box :-moz-placeholder, .head-search :-moz-placeholder{ /* Firefox 18- */
+    color: #1B5E20;
+    opacity: .6;
+    text-transform: capitalize;
+}
+.login-box #submit{border: 1px solid #1B5E20; font-size: 16px; border-radius: 30% 0%; color: #000 !important; box-shadow: 0 0 5px #1B5E20; padding: 10px 15px; text-transform: uppercase; background: #99C939;  }
+.login-box #submit:hover{background: #A1CD3D; color: #ffffff !important;}
+.login-box #username:hover, .login-box #password:hover, .login-box #username:focus, .login-box #password:focus, .head-search .search-field:focus, .head-search .search-field:focus{border-color: #4DB74C; color: #000 !important;}
+
+.social-login{width: 100%; float: left; padding: 20px 0px 0;}
+.social-login a{font-size: 16px; color: #00a6fc !important;}
+.social-login a:first-child{float: left;}
+.social-login a:last-child{float: right;}
+.forgetpass{width: 100%; float: left;}
+.forgetpass a{float: right; font-size: 16px; color: #333 !important;}
+
+.login-txt{width: 100%; float: left;}
+.login-txt h2{margin-top: 20px; text-transform: uppercase; font-size: 25px; font-weight: bold; color: #000;}
+.social-login.hor-menu ul{max-width: 180px; margin: 0 auto; float: none; display: inline-block;}
+.social-login.hor-menu ul li{ width: 50px; height: 50px; margin-right: 10px; padding: 0;}
+.social-login.hor-menu ul li a{color: #3B5998 !important; text-shadow: 2px 2px 2px #333; background: #ffffff; padding: 0; width: 100%; font-size: 30px; line-height: 48px; text-align: center;}
+
+.social-login.hor-menu ul li a:hover{background:#3B5998; color: #ffffff !important;}
+.social-login.hor-menu ul li:first-child a{color: #DC4E41 !important;}
+.social-login.hor-menu ul li:first-child a:hover{background: #DC4E41; color: #ffffff !important;}
+.social-login.hor-menu ul li:last-child a{color: #55ACEE !important;}
+.social-login.hor-menu ul li:last-child a:hover{background: #55ACEE; color: #ffffff !important;}
+
+
+#footer{width: 100%; float: left; padding: 10px 0}
+.copyright{text-align: left; color: #ffffff; padding: 0; margin: 0;}
+.footer-link{width: 100%; float: left; padding-right: 60px;}
+.footer-link ul{float: right; margin: 0; padding: 0;}
+.footer-link ul li{float: left; list-style: none; margin-right: 5px; border-right: 1px solid #ffffff; padding-right: 5px;}
+.footer-link ul li:last-child{border-right: none; padding-right: 0; margin-right: 0;}
+.footer-link ul li a{float: left; color: #ffffff !important;}
+
+.head-search{width: 100%; position: relative; margin-top: 18px;}
+.head-search .search-field{padding-right: 60px;}
+.head-search .search-btn{-webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out;width: 43px; height: 43px; position: absolute; top: 1px; right: 1px; border: none; background: #1b5e20; color: #ffffff; font-size: 22px;}
+.head-search .search-btn:hover{background: #4DB74C;}
+.head-search .search-btn:hover i{text-shadow: 2px 2px 2px #000 !important;}
+
+.head-pro{float: right; width: 100%; margin-top: 15px; position: relative;}
+.head-pro .dropdown{float: right; width:100%; padding-right: 20px;}
+.head-pro .dropdown .dropdown-menu{right: 0; left: inherit; margin-top: 30px;}
+.user-link{width: 100%; float: right}
+.user-box{border: 2px solid #333333; border-radius: 50%; height: 50px; width: 50px; float: right;}
+.user-link img{
+    display: block;
+    height: 40px;
+    margin: auto;
+    max-width: 100%;
+}
+.head-pro .caret{float: right; position: absolute; right: 0; top: 50%;}
+
+.menu{width: 100%; float: left; border-top: 2px solid #52B94D; background: #0A1725;}
+.menu .hor-menu{width: 100%; max-width: 600px; margin: 0 auto; display: block; float: none; overflow: hidden;}
+.menu ul{width: 100%;}
+.menu ul li{width:33%;}
+.menu ul li a{color: #333333 !important; text-align: center; font-size: 40px; color: #97C93F !important;}
+.menu ul li a:hover, .menu ul li.active a{background: #ffffff;}
+
+.side-bar, .video-box{width: 100%; float: left; border: 2px solid #52B94D; margin-top: 20px;}
+.side-bar .title, .video-details .title{width: 100%; font-size: 18px; font-weight: 700; border-bottom: 2px solid #52B94D; float: left; padding: 15px 0; text-align: center; text-transform: uppercase;}
+
+.side-bar header{
+    width: 100%;
+    float: left;
+    border-bottom: 2px solid #52B94D;
+}
+.side-bar header{width: 100%; float: left; padding: 5px 15px;}
+.side-bar header h3{
+    margin-top: 8px;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.list-item{border-bottom: 2px solid #52B94D;}
+.list-item:last-child{border-bottom:none;}
+.side-bar header .side-btn{padding: 5px 10px; float: right; font-size: 14px; font-weight: 700; text-transform: uppercase; color: #333333 !important; border-radius: 10px; background: #97C93F;}
+.video-overly{position: absolute; left: 0; top: 0; bottom: 0; background: #000; width: 100%; opacity: .8; background: #000;}
+.play-btn{position: absolute; top:50%; right: 50%; margin-top: -24px; margin-right: -24px; z-index: 9999;}
+
+.video-details .title{text-align: left; padding-left: 15px;}
+.video-details p{text-align: left;  margin: 0; padding: 10px 15px; width: 100%; float: left;}
+p.video-info{padding-bottom: 0;}
+.video-palyer{width: 100%; float: left; border-top: 2px solid #52B94D; position: relative;}
+.video-palyer video{float: left;}
+.video-palyer img{position: absolute; top: 0; left: 0; opacity: .5;}
+
+
